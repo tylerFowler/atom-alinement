@@ -1,5 +1,20 @@
-# alinement package
+Alinement
+=======================================
 
-A short description of your package.
+For those of you who like even assignment columns.
 
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+Turns this:
+```javascript
+const R = require('ramda');
+const fs = require('fs');
+const path = require('path');
+const express = require('express');
+```
+
+Into this:
+```javascript
+const R       = require('ramda');
+const fs      = require('fs');
+const path    = require('path');
+const express = require('express');
+```
