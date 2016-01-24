@@ -1,10 +1,13 @@
 {
   "name": "alinement",
   "main": "./lib/alinement",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Atom package that aligns variable assignments in a column on the equals character",
   "author": "Tyler Fowler <tylerfowler.1337@gmail.com>",
-  "keywords": [ "alignment", "text" ],
+  "keywords": [
+    "alignment",
+    "text"
+  ],
   "activationCommands": {
     "atom-workspace": "alinement:align-selection"
   },
