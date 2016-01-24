@@ -28,6 +28,8 @@ module.exports = Alinement =
   # TODO: there's an interesting edge case on lines like: `x = y =\n`
   # where this will actually register an assignee of `x = y` and an assignment
   # of `= y =`, resulting in `x = y = y =` - obviously not desirable behavior
+  # TODO: when a line is partially selected, extend the selection to
+  # cover the whole line
   alignSelection: ->
     if editor = atom.workspace.getActiveTextEditor()
       lines = editor.getSelectedText()

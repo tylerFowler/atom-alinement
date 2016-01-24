@@ -1,13 +1,13 @@
 {
   "name": "alinement",
   "main": "./lib/alinement",
-  "version": "0.0.0",
-  "description": "A short description of your package",
-  "keywords": [],
+  "version": "0.1.0",
+  "description": "Atom package that aligns variable assignments in a column on the equals character",
+  "keywords": [ "alignment", "text" ],
   "activationCommands": {
     "atom-workspace": "alinement:align-selection"
   },
-  "repository": "https://github.com/atom/alinement",
+  "repository": "https://github.com/tylerFowler/atom-alinement.git",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
