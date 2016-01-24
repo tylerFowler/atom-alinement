@@ -10,8 +10,6 @@ module.exports = Alinement =
   lefthandExpr: /(^[^\s*\#\s*\/].+)(?:=)/
 
   # match the right hand of the assignment, e.g. = require('somepak')
-  ## does not work for golang's `:=` assignment operator, any regex
-  ## suggestions are welcome
   righthandExpr: /\=[^\>\<].+$/
 
   activate: (state) ->
