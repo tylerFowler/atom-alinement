@@ -1,0 +1,21 @@
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Align Selection'
+      'command': 'alinement:align-selection'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'alinement'
+      'submenu': [
+        {
+          'label': 'Align Selection'
+          'command': 'alinement:align-selection'
+        }
+      ]
+    ]
+  }
+]
