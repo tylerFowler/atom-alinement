@@ -9,7 +9,7 @@ module.exports = Alinement =
   ## are in comments, though I suppose that's a philosophical question
   lefthandExpr: /(^[^\s*\#\s*\/].+)(?:=)/
 
-  # match the right hadn of the assignment, e.g. = require('somepak')
+  # match the right hand of the assignment, e.g. = require('somepak')
   ## does not work for golang's `:=` assignment operator, any regex
   ## suggestions are welcome
   righthandExpr: /\=[^\>\<].+$/
@@ -32,6 +32,10 @@ module.exports = Alinement =
   # cover the whole line
   alignSelection: ->
     if editor = atom.workspace.getActiveTextEditor()
+      # include the whole lines in the selection to avoid mangling things
+      # in the middle
+      editor.selectToBeginningOfLine()
+
       lines = editor.getSelectedText()
       .split '\n'
       .map (l) =>
