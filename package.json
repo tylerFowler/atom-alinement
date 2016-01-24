@@ -1,7 +1,7 @@
 {
   "name": "alinement",
   "main": "./lib/alinement",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Atom package that aligns variable assignments in a column on the equals character",
   "author": "Tyler Fowler <tylerfowler.1337@gmail.com>",
   "keywords": [
