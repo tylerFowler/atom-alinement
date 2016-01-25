@@ -7,7 +7,12 @@ module.exports = Alinement =
   # match the left hand of an assignment, e.g. `let x`
   ## on the first bit, we don't want to try and align things that
   ## are in comments, though I suppose that's a philosophical question
-  lefthandExpr: /(^[^\s*\#\s*\/].+)(?:=)/
+  ## NOTE: this has been disabled as the part banning whitespace before
+  ## a comment also bans whitespace of any kind, meaning it won't work on
+  ## indented lines at all, so disable the comment part for now.
+  # lefthandExpr: /(^[^\s*\#\s*\/].+)(?:=)/
+
+  lefthandExpr: /(^.+)(?:=)/
 
   # match the right hand of the assignment, e.g. = require('somepak')
   righthandExpr: /\=[^\>\<].+$/
