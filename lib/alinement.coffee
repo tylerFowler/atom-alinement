@@ -58,8 +58,6 @@ module.exports = Alinement =
 
         return lineData
 
-      console.log "Got line data", lines
-
       # if we have nothing to process just return
       return unless lines.length > 0
 
